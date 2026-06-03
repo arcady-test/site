@@ -1225,3 +1225,58 @@ html {
     font-size: 20px !important;
   }
 }
+
+
+/* v26: use newly uploaded logo file and prevent logo cropping */
+.header .logo img {
+  width: 100% !important;
+  max-width: 620px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+.header .logo {
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+.header .nav {
+  padding-top: 10px !important;
+  padding-bottom: 30px !important;
+}
+
+.header .nav::after {
+  bottom: 8px !important;
+}
+
+@media (max-width: 1180px) {
+  .header .logo {
+    max-width: 520px !important;
+    flex-basis: 520px !important;
+  }
+  .header .logo img {
+    max-width: 520px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .header .logo {
+    max-width: 430px !important;
+    flex-basis: 430px !important;
+  }
+  .header .logo img {
+    max-width: 430px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .header .logo {
+    max-width: 280px !important;
+    flex-basis: 280px !important;
+  }
+  .header .logo img {
+    max-width: 280px !important;
+  }
+}
