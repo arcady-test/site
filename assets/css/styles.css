@@ -802,3 +802,43 @@ html {
 #contact {
   display: none !important;
 }
+
+
+/* v20: static decorative gold underline under logo, no animation */
+.logo {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 8px 0 18px !important;
+  box-shadow: none !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.logo:before {
+  content: none !important;
+}
+
+.logo:after,
+.logo::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 2% !important;
+  right: 2% !important;
+  bottom: 2px !important;
+  height: 10px !important;
+  border-radius: 999px !important;
+  background:
+    linear-gradient(90deg, transparent 0%, #9b6b17 10%, #d6a636 28%, #fff0a8 50%, #d6a636 72%, #9b6b17 90%, transparent 100%);
+  box-shadow:
+    0 2px 0 rgba(118, 80, 18, .35),
+    0 7px 14px rgba(185, 134, 35, .28);
+  animation: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.logo img {
+  position: relative !important;
+  z-index: 1 !important;
+}
