@@ -937,3 +937,137 @@ html {
     max-height: 88px !important;
   }
 }
+
+
+/* v24: FIX logo area. No baked crooked line. Use clean logo + real straight gold bar. */
+.header .nav {
+  gap: 34px !important;
+  overflow: visible !important;
+}
+
+.header .logo {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  flex: 0 1 620px !important;
+  max-width: 620px !important;
+  min-width: 0 !important;
+  width: auto !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 8px 0 0 !important;
+  overflow: visible !important;
+  text-decoration: none !important;
+}
+
+.header .logo:before,
+.header .logo:after,
+.header .logo::before,
+.header .logo::after,
+.header .logo .logo-underline {
+  content: none !important;
+  display: none !important;
+}
+
+.header .logo img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 620px !important;
+  height: auto !important;
+  max-height: 96px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+/* Actual visible straight underline under the logo */
+.header .logo .logo-bar {
+  display: block !important;
+  width: 100% !important;
+  height: 18px !important;
+  margin-top: 8px !important;
+  border-radius: 3px !important;
+  border: 2px solid #8f6417 !important;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 240, 170, .70) 0px,
+      rgba(255, 240, 170, .70) 8px,
+      rgba(199, 151, 47, .95) 8px,
+      rgba(199, 151, 47, .95) 16px
+    ),
+    linear-gradient(90deg, #9b6b17 0%, #f1d173 50%, #9b6b17 100%) !important;
+  box-shadow: 0 3px 8px rgba(85, 55, 14, .22) !important;
+}
+
+/* Prevent nav from being pushed outside the screen */
+.header .nav-links {
+  flex: 1 0 auto !important;
+  justify-content: flex-end !important;
+  min-width: 470px !important;
+}
+
+.header .nav-links .call {
+  min-width: 132px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 1180px) {
+  .header .logo {
+    max-width: 520px !important;
+    flex-basis: 520px !important;
+  }
+
+  .header .logo img {
+    max-width: 520px !important;
+    max-height: 86px !important;
+  }
+
+  .header .nav-links {
+    min-width: 420px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .header .nav {
+    min-height: 104px !important;
+  }
+
+  .header .logo {
+    max-width: 430px !important;
+    flex-basis: 430px !important;
+  }
+
+  .header .logo img {
+    max-width: 430px !important;
+    max-height: 76px !important;
+  }
+
+  .header .logo .logo-bar {
+    height: 14px !important;
+    margin-top: 6px !important;
+  }
+
+  .header .nav-links {
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .header .logo {
+    max-width: 280px !important;
+    flex-basis: 280px !important;
+  }
+
+  .header .logo img {
+    max-width: 280px !important;
+    max-height: 58px !important;
+  }
+
+  .header .logo .logo-bar {
+    height: 10px !important;
+    margin-top: 4px !important;
+  }
+}
