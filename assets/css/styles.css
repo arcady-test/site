@@ -842,3 +842,73 @@ html {
   position: relative !important;
   z-index: 1 !important;
 }
+
+
+/* v21: real visible decorative gold underline under top logo */
+.header .logo {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 8px 0 0 !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Disable old pseudo underline completely */
+.header .logo:before,
+.header .logo:after,
+.header .logo::before,
+.header .logo::after {
+  content: none !important;
+  display: none !important;
+}
+
+.header .logo img {
+  display: block !important;
+  width: 720px !important;
+  max-width: min(720px, 58vw) !important;
+  max-height: 150px !important;
+  object-fit: contain !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.header .logo .logo-underline {
+  display: block !important;
+  width: 100% !important;
+  height: 22px !important;
+  margin-top: 4px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 100% 100% !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 42' preserveAspectRatio='none'%3E%3Cpath d='M8 25 C80 6 120 42 205 23 S340 5 455 23 S610 39 710 21 S830 8 892 23' fill='none' stroke='%23c69a3a' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M8 25 C80 6 120 42 205 23 S340 5 455 23 S610 39 710 21 S830 8 892 23' fill='none' stroke='%23f7d879' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+}
+
+@media (max-width: 980px) {
+  .header .logo img {
+    width: 460px !important;
+    max-width: 62vw !important;
+    max-height: 105px !important;
+  }
+  .header .logo .logo-underline {
+    height: 18px !important;
+    margin-top: 3px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .header .logo img {
+    width: 300px !important;
+    max-width: 66vw !important;
+    max-height: 80px !important;
+  }
+  .header .logo .logo-underline {
+    height: 14px !important;
+    margin-top: 2px !important;
+  }
+}
