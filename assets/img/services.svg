@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Accounting service cards illustration">
+<rect width="900" height="520" rx="28" fill="#f7f2e8"/>
+<g fill="#fff" stroke="#e1d7c4"><rect x="90" y="90" width="210" height="150" rx="22"/><rect x="345" y="90" width="210" height="150" rx="22"/><rect x="600" y="90" width="210" height="150" rx="22"/><rect x="220" y="285" width="210" height="150" rx="22"/><rect x="475" y="285" width="210" height="150" rx="22"/></g>
+<g fill="#1b6fae"><circle cx="140" cy="145" r="22"/><circle cx="395" cy="145" r="22"/><circle cx="650" cy="145" r="22"/><circle cx="270" cy="340" r="22"/><circle cx="525" cy="340" r="22"/></g>
+<g stroke="#6c8193" stroke-width="12" stroke-linecap="round" opacity=".45"><path d="M130 195h120M385 195h120M640 195h120M260 390h120M515 390h120"/><path d="M130 220h80M385 220h80M640 220h80M260 415h80M515 415h80"/></g>
+</svg>

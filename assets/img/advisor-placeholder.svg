@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" viewBox="0 0 480 560" role="img" aria-label="Advisor photo placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#eaf4fb"/><stop offset="1" stop-color="#f7ead2"/></linearGradient>
+  </defs>
+  <rect width="480" height="560" rx="28" fill="url(#g)"/>
+  <circle cx="240" cy="175" r="70" fill="#1b6fae" opacity=".9"/>
+  <path d="M110 450c18-94 77-146 130-146s112 52 130 146" fill="#1b6fae" opacity=".9"/>
+  <text x="240" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#0c2a44">TaxArtPro Advisor</text>
+</svg>
